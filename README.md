@@ -1,4 +1,275 @@
-//START AjaxControlToolkit.Compat.Timer.Timer.js
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0052)http://portalalumnos.univa.mx/Academico/boletas.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="ctl00_Head1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./Portal de Alumnos UNIVA_files/carga.css" rel="stylesheet" type="text/css"><link href="./Portal de Alumnos UNIVA_files/StyleSheet.css" rel="stylesheet" type="text/css"><link href="./Portal de Alumnos UNIVA_files/StyleSheetc.css" rel="stylesheet" type="text/css"><link href="./Portal de Alumnos UNIVA_files/style.css" rel="stylesheet" type="text/css"><title>
+	Portal de Alumnos UNIVA
+</title><script type="text/javascript">
+function rtcScript() {
+    document.oncontextmenu = null;
+    document.onselectstart = null;
+    document.onmousedown = null;
+    document.onclick = null;
+    document.oncopy = null;
+    document.oncut = null;
+    var elements = document.getElementsByTagName('*');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].oncontextmenu = null;
+        elements[i].onselectstart = null;
+        elements[i].onmousedown = null;
+        elements[i].oncopy = null;
+        elements[i].oncut = null;
+    }
+    function preventShareThis() {
+        document.getSelection = window.getSelection = function() {
+            return {isCollapsed: true};
+        }
+    }
+    var scripts = document.getElementsByTagName('script');
+    for (var i = 0; i < scripts.length; i++) {
+        if (scripts[i].src.indexOf('w.sharethis.com') > -1) {
+            preventShareThis();
+        }
+    }
+    if (typeof Tynt != 'undefined') {
+        Tynt = null;
+    }
+}
+rtcScript();
+setInterval(rtcScript, 2000);</script><style>
+* {
+    -webkit-user-select: auto !important; /* injected by RightToCopy */
+}</style></head>
+<body>
+
+    <div id="div-top"></div>
+	<div id="div-top-sub">
+		<a href="http://portalalumnos.univa.mx/" target="_parent">INICIO</a><a href="http://portalalumnos.univa.mx/cerrarsesion.aspx" target="_parent">SALIR</a>
+	</div>
+	<center>
+	<div id="div-header">
+		<!--<img img id='img-tittle' src='../images/top_tittle_univa2.png'/>-->
+	</div>
+	
+	</center>
+
+  
+    <form name="aspnetForm" method="post" action="http://portalalumnos.univa.mx/Academico/boletas.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="ctl00_ToolkitScriptManager1_HiddenField" id="ctl00_ToolkitScriptManager1_HiddenField" value=";;AjaxControlToolkit, Version=1.0.10618.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e:en-US:b0861b22-4a7d-4f9c-bdd0-077bf7d35bc5:9ea3f0e2:e2e86ef9:9e8e87e9:1df13a87:9758eba:3858419b">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Portal de Alumnos UNIVA_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Portal de Alumnos UNIVA_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./Portal de Alumnos UNIVA_files/ScriptResource(1).axd" type="text/javascript"></script>
+<script src="./Portal de Alumnos UNIVA_files/boletas.aspx" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9E90F801">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWIAKqnPZzAouChegCAo/Z5oEKAqrChJcEAviHsbkHApXg28INAreY9sMNAq/3+IwFAo+GvTwC8ovnqgoCxauirA4CucTI9wEC+YzXwgsCueCfLwKT7LLuDALI7vjSCwLEieKGAwKrxcfEBgKthIy1BwL+sekMAr+x7d0NArqmm+gIAtb8zq8PAtb8zq8PAuKA06AEAuKA76AEAuKA25sNAuKAx5sNAuKAw5sNApmZ6WQCmZnVZAKZmdFkxMFuyb3gmTjj8+K+y4hulZkvMDQ=">
+</div>
+    <center><div id="div-bottom"> 
+<table style="background-color: #002856; color:#FFF;">
+    <tbody><tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+     <td> 
+<span id="ctl00_WctrlAlumno2_Label1" style="color:#FF7F00;font-family:Arial;font-size:9pt;font-weight:bold;">MATRÍCULA:</span></td>
+     <td>
+     <span id="ctl00_WctrlAlumno2_lblMatricula" style="color:White;font-family:Arial;font-size:8pt;text-decoration:underline;">0121820078</span></td>
+     
+     <td> <span id="ctl00_WctrlAlumno2_Label2" style="display:inline-block;color:#FF7F00;font-family:Arial;font-size:9pt;font-weight:bold;width:61px;">NOMBRE:</span></td>
+     <td>
+     <span id="ctl00_WctrlAlumno2_lblNombre" style="color:White;font-family:Arial;font-size:8pt;text-decoration:underline;">ZUBIETA SEPULVEDA ANDRES</span></td>
+    
+     <td> <span id="ctl00_WctrlAlumno2_Label8" style="color:#FF7F00;font-family:Arial;font-size:9pt;font-weight:bold;">CARRERA:</span></td>
+     <td>
+     <span id="ctl00_WctrlAlumno2_lblPrograma" style="color:White;font-family:Arial;font-size:8pt;text-decoration:underline;">LICENCIATURA EN COMERCIO Y NEGOCIOS INTERNACIONALES</span></td>
+    
+     <td> <span id="ctl00_WctrlAlumno2_Label3" style="display:inline-block;color:#FF7F00;font-family:Arial;font-size:9pt;font-weight:bold;width:60px;">ESTATUS:</span></td>
+     <td>
+     <span id="ctl00_WctrlAlumno2_lblEstado" style="color:White;font-family:Arial;font-size:8pt;text-decoration:underline;">AC</span></td>
+    <!-- <td> <span id="ctl00_WctrlAlumno2_Label4" style="display:inline-block;font-family:Arial;font-size:9pt;font-weight:bold;width:70px;">PROMEDIO:</span></td>
+     <td>
+     <span id="ctl00_WctrlAlumno2_lblPromedio" style="color:Black;font-family:Arial;font-size:9pt;text-decoration:underline;"></span></td> !-->
+     
+     <td> <span id="ctl00_WctrlAlumno2_Label44" style="display:inline-block;color:#FF7F00;font-family:Arial;font-size:9pt;font-weight:bold;width:60px;">PERIODO:</span></td>
+     <td>
+     <span id="ctl00_WctrlAlumno2_LabelPeriodo" style="color:White;font-family:Arial;font-size:8pt;text-decoration:underline;">220-3</span></td>
+     
+     
+     </tr>
+</tbody></table> </div></center>
+
+      <div id="Principal">
+        &nbsp;
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ToolkitScriptManager1', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 90);
+//]]>
+</script>
+
+    
+        <div id="ctl00_MyAccordion" style="background-color: white; width: 976px; height: auto; overflow: auto;">
+	<input type="hidden" name="ctl00$MyAccordion_AccordionExtender_ClientState" id="ctl00_MyAccordion_AccordionExtender_ClientState" value="1"><div class="accordionHeader">
+		&nbsp;<u>Menú Principal</u>&nbsp;
+	</div><div style="height: 0px; overflow: hidden; display: none; opacity: 0;"><div class="accordionContent" style="display: block; height: auto; overflow: hidden; opacity: 1;">
+		
+                        <div id="ctl00_ctl06_PanelReticula" style="background-color: transparent; border-color: gray; vertical-align: top; padding: 0px;"><div style="background-color: rgb(255, 255, 255); margin-left: 10px; margin-right: 10px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 6px; margin-right: 6px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 4px; margin-right: 4px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 3px; margin-right: 3px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 2px; margin-right: 2px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 1px; margin-right: 1px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 1px; margin-right: 1px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 0px; margin-right: 0px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 0px; margin-right: 0px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 0px; margin-right: 0px; height: 1px; font-size: 1px; overflow: hidden;"></div><div id="" style="background-color: white; width: 100%; border-style: none;">
+			
+                        <table>
+                        <tbody><tr>
+                        
+                        <td style="width:203px;vertical-align:top">
+                        <table>
+                    <tbody><tr>
+                        <td colspan="2" class="EncabezadoOpcionesL" style="width: 191px; height: 23px">Servicios Escolares</td>
+                    </tr>
+                    
+                     <tr>
+                                   <!--<td><img src="../IMG/metal_07.jpg"/></td><td class="Opciones"><a id="ctl00_ctl06_LinkButton4" class="LinkButton" href="javascript:__doPostBack('ctl00$ctl06$LinkButton4','')" style="text-decoration:none;">Calendario Escolar</a></td>-->
+                                  
+                        
+                         <td><img alt="" src="./Portal de Alumnos UNIVA_files/metal_07.jpg"></td><td class="Opciones"><a href="http://portalalumnos.univa.mx/PUBLIC/CalendarioEscolar.pdf" target="_blank" style="text-decoration:none; color:#000;">Calendario Escolar</a></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><img src="./Portal de Alumnos UNIVA_files/metal_07.jpg"></td><td class="Opciones"><a id="ctl00_ctl06_LinkButton5" class="LinkButton" href="javascript:__doPostBack(&#39;ctl00$ctl06$LinkButton5&#39;,&#39;&#39;)" style="text-decoration:none;">Control Escolar</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./Portal de Alumnos UNIVA_files/metal_07.jpg"></td><td class="Opciones"><a id="ctl00_ctl06_LinkButtonGraduaciones" class="LinkButton" href="javascript:__doPostBack(&#39;ctl00$ctl06$LinkButtonGraduaciones&#39;,&#39;&#39;)" style="text-decoration:none;">Graduaciones</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./Portal de Alumnos UNIVA_files/metal_07.jpg"></td><td class="Opciones"><a id="ctl00_ctl06_LinkButtonTitulaciones" class="LinkButton" href="javascript:__doPostBack(&#39;ctl00$ctl06$LinkButtonTitulaciones&#39;,&#39;&#39;)" style="text-decoration:none;">Titulaciones</a></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="./Portal de Alumnos UNIVA_files/metal_07.jpg"></td><td class="Opciones"><a id="ctl00_ctl06_lnkServicioSocial" class="LinkButton" href="javascript:__doPostBack(&#39;ctl00$ctl06$lnkServicioSocial&#39;,&#39;&#39;)" style="text-decoration:none;">Servicio Social</a></td>
+                    </tr> 
+                </tbody></table>
+                    </td> 
+                        
+                        <td style="width:203px;vertical-align:top">
+            
+                <table>
+                    <tbody><tr>
+                        <td colspan="2" class="EncabezadoOpcionesL" style="width: 191px; height: 23px">Información Académica</td>
+                    </tr>
+                    
+                     <tr>
+                        <td><img src="./Portal de Alumnos UNIVA_files/metal_07.jpg"></td><td class="Opciones"><a id="ctl00_ctl06_lnkBoletas" class="LinkButton" href="javascript:__doPostBack(&#39;ctl00$ctl06$lnkBoletas&#39;,&#39;&#39;)" style="text-decoration:none;">Calificación Final</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./Portal de Alumnos UNIVA_files/metal_07.jpg"></td><td class="Opciones"><a id="ctl00_ctl06_lnkCargaActual" class="LinkButton" href="javascript:__doPostBack(&#39;ctl00$ctl06$lnkCargaActual&#39;,&#39;&#39;)" style="text-decoration:none;">Carga Actual</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./Portal de Alumnos UNIVA_files/metal_07.jpg"></td><td class="Opciones"><a id="ctl00_ctl06_lnkCargaEnLinea" class="LinkButton" href="javascript:__doPostBack(&#39;ctl00$ctl06$lnkCargaEnLinea&#39;,&#39;&#39;)" style="text-decoration:none;">Carga en Línea</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./Portal de Alumnos UNIVA_files/metal_07.jpg"></td><td class="Opciones"><a id="ctl00_ctl06_LinkButton6" class="LinkButton" href="javascript:__doPostBack(&#39;ctl00$ctl06$LinkButton6&#39;,&#39;&#39;)" style="text-decoration:none;">Documentos y Formatos</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./Portal de Alumnos UNIVA_files/metal_07.jpg"></td><td class="Opciones"><a id="ctl00_ctl06_lnkEvalDocente" class="LinkButton" href="javascript:__doPostBack(&#39;ctl00$ctl06$lnkEvalDocente&#39;,&#39;&#39;)" style="text-decoration:none;">Evaluación Docente</a></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="./Portal de Alumnos UNIVA_files/metal_07.jpg"></td><td class="Opciones"><a id="ctl00_ctl06_lnkKardex" class="LinkButton" href="javascript:__doPostBack(&#39;ctl00$ctl06$lnkKardex&#39;,&#39;&#39;)" style="text-decoration:none;">Kardex</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./Portal de Alumnos UNIVA_files/metal_07.jpg"></td><td class="Opciones"><a id="ctl00_ctl06_lnkReticula" class="LinkButton" href="javascript:__doPostBack(&#39;ctl00$ctl06$lnkReticula&#39;,&#39;&#39;)" style="text-decoration:none;">Retícula</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./Portal de Alumnos UNIVA_files/metal_07.jpg"></td><td class="Opciones"><a id="ctl00_ctl06_lnkCalificacionesParciales" class="LinkButton" href="javascript:__doPostBack(&#39;ctl00$ctl06$lnkCalificacionesParciales&#39;,&#39;&#39;)" style="text-decoration:none;">Calificaciones Parciales</a></td>
+                    </tr>
+                     
+                </tbody></table>
+                </td>
+                <td style="width:203px;vertical-align:top">
+                
+               
+                <table>
+                    <tbody><tr>
+                        <td colspan="2" class="EncabezadoOpcionesL" style="width: 191px; height: 23px; font-size: 15px;">Información Administrativa</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./Portal de Alumnos UNIVA_files/metal_07.jpg"></td><td class="Opciones"><a id="ctl00_ctl06_lnkAyudasFinancieras" class="LinkButton" href="javascript:__doPostBack(&#39;ctl00$ctl06$lnkAyudasFinancieras&#39;,&#39;&#39;)" style="text-decoration:none;">Ayudas Financieras</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./Portal de Alumnos UNIVA_files/metal_07.jpg"></td><td class="Opciones"><a id="ctl00_ctl06_lnkBoletaInscripcion" class="LinkButton" href="javascript:__doPostBack(&#39;ctl00$ctl06$lnkBoletaInscripcion&#39;,&#39;&#39;)" style="text-decoration:none;">Orden de Pago</a></td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="./Portal de Alumnos UNIVA_files/metal_07.jpg"></td><td class="Opciones"><a id="ctl00_ctl06_lnkDocumentosporVencer" class="LinkButton" href="javascript:__doPostBack(&#39;ctl00$ctl06$lnkDocumentosporVencer&#39;,&#39;&#39;)" style="text-decoration:none;">Documentos por Vencer</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./Portal de Alumnos UNIVA_files/metal_07.jpg"></td><td class="Opciones"><a id="ctl00_ctl06_lnkDocumentosVencidos" class="LinkButton" href="javascript:__doPostBack(&#39;ctl00$ctl06$lnkDocumentosVencidos&#39;,&#39;&#39;)" style="text-decoration:none;">Documentos Vencidos</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./Portal de Alumnos UNIVA_files/metal_07.jpg"></td><td class="Opciones"><a id="ctl00_ctl06_lnkEstadoDeCuenta" class="LinkButton" href="javascript:__doPostBack(&#39;ctl00$ctl06$lnkEstadoDeCuenta&#39;,&#39;&#39;)" style="text-decoration:none;">Estado de Cuenta</a></td>
+                    </tr>
+                    
+                </tbody></table>
+                </td>
+                <td style="width:203px;vertical-align:top">
+                <table>
+                    <tbody><tr>
+                        <td colspan="2" class="EncabezadoOpcionesL" style="width: 191px; height: 23px; font-size: 15px;">Preferencias</td>
+                    </tr>
+                
+                    <tr>
+                        <td><img src="./Portal de Alumnos UNIVA_files/metal_07.jpg"></td><td class="Opciones"><a id="ctl00_ctl06_lnkCorreoAlternativo" class="LinkButton" href="javascript:__doPostBack(&#39;ctl00$ctl06$lnkCorreoAlternativo&#39;,&#39;&#39;)" style="text-decoration:none;">Correo Alternativo</a></td>
+                    </tr>
+                  
+                </tbody></table>
+            </td>
+                        </tr>
+                        </tbody></table>
+                        
+		</div><div style="background-color: rgb(255, 255, 255); margin-left: 0px; margin-right: 0px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 0px; margin-right: 0px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 0px; margin-right: 0px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 1px; margin-right: 1px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 1px; margin-right: 1px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 2px; margin-right: 2px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 3px; margin-right: 3px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 4px; margin-right: 4px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 6px; margin-right: 6px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 10px; margin-right: 10px; height: 1px; font-size: 1px; overflow: hidden;"></div></div>
+                             
+                    
+	</div></div><div class="accordionHeaderSelected">
+		&nbsp;<u>Contenido</u>&nbsp;
+	</div><div style="height: auto; overflow: auto; display: block; opacity: 1;"><div class="accordionContent" style="display: block; height: auto; overflow: auto; opacity: 1;">
+		
+                        <div id="ctl00_ctl08_Panel1" style="background-color: transparent; border-color: gray; vertical-align: top; padding: 0px; width: 976px;"><div style="background-color: rgb(255, 255, 255); margin-left: 10px; margin-right: 10px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 6px; margin-right: 6px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 4px; margin-right: 4px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 3px; margin-right: 3px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 2px; margin-right: 2px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 1px; margin-right: 1px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 1px; margin-right: 1px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 0px; margin-right: 0px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 0px; margin-right: 0px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 0px; margin-right: 0px; height: 1px; font-size: 1px; overflow: hidden;"></div><div id="" style="background-color: white; width: 100%; border-style: none;">
+			
+                        <div>
+                          
+<a id="ctl00_ctl08_ContentPlaceHolder1_lnkprint" class="LinkButton" href="javascript:__doPostBack(&#39;ctl00$ctl08$ContentPlaceHolder1$lnkprint&#39;,&#39;&#39;)" style="text-decoration:none;">Versión Imprimible</a> <br>
+<span id="ctl00_ctl08_ContentPlaceHolder1_lble">Periodo: </span><select name="ctl00$ctl08$ContentPlaceHolder1$cboPeriodo" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl08$ContentPlaceHolder1$cboPeriodo\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ctl08_ContentPlaceHolder1_cboPeriodo">
+				<option value=""></option>
+				<option value="2018-2">Enero 2018 - Abril 2018</option>
+				<option value="2018-3">Mayo 2018 - Agosto 2018</option>
+				<option value="2019-1">Septiembre 2018 - Diciembre 2018</option>
+				<option value="2019-2">Enero 2019 - Abril 2019</option>
+				<option value="2019-3">Mayo 2019 - Agosto 2019</option>
+				<option value="2020-1">Septiembre 2019 - Diciembre 2019</option>
+				<option value="2020-2">Enero 2020 - Abril 2020</option>
+				<option selected="selected" value="2020-3">Mayo 2020 - Agosto 2020</option>
+
+			</select>//START AjaxControlToolkit.Compat.Timer.Timer.js
 // (c) Copyright Microsoft Corporation.
 // This source is subject to the Microsoft Permissive License.
 // See http://www.microsoft.com/resources/sharedsource/licensingbasics/sharedsourcelicenses.mspx.
@@ -16515,3 +16786,62 @@ function WebForm_SetElementY(element, y) {
         element.style.top = y + "px";
     }
 }
+
+
+ <table class="Marco">
+                            <tbody><tr><td>
+                             <div>
+				<table cellspacing="0" cellpadding="4" rules="all" border="1" id="ctl00_ctl08_ContentPlaceHolder1_GridViewCarga" style="background-color:White;border-color:Black;border-width:1px;border-style:None;width:100%;border-collapse:collapse;">
+					<tbody><tr style="color:White;background-color:#81ACCC;font-family:Arial;font-size:10pt;font-weight:normal;">
+						<th scope="col">CLAVE</th><th scope="col">MATERIA</th><th scope="col">GRUPO</th><th scope="col">TURNO</th><th scope="col">OPORTUNIDAD</th><th scope="col">CALIFICACIÓN</th>
+					</tr><tr style="color:Black;background-color:#EDE9E6;font-family:Arial;font-size:10pt;">
+						<td>177004</td><td>INGLES</td><td>6043</td><td>1</td><td>Ordinario</td><td>9.0</td>
+					</tr><tr style="color:Black;background-color:#EDE9E6;font-family:Arial;font-size:10pt;">
+						<td>144007</td><td>Normas básicas del proceso contable</td><td>30</td><td>1</td><td>Ordinario</td><td>8.0</td>
+					</tr><tr style="color:Black;background-color:#EDE9E6;font-family:Arial;font-size:10pt;">
+						<td>144030</td><td>Geografía internacional</td><td>26</td><td>1</td><td>Ordinario</td><td>9.0</td>
+					</tr><tr style="color:Black;background-color:#EDE9E6;font-family:Arial;font-size:10pt;">
+						<td>155050</td><td>Informática aplicada a los negocios internacionales</td><td>30</td><td>1</td><td>Ordinario</td><td>8.0</td>
+					</tr>
+				</tbody></table>
+			</div>
+    
+                            </td></tr>
+                          <tr>
+                          
+                          </tr>
+                            </tbody></table>
+
+
+
+
+                          </div>
+                        
+		</div><div style="background-color: rgb(255, 255, 255); margin-left: 0px; margin-right: 0px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 0px; margin-right: 0px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 0px; margin-right: 0px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 1px; margin-right: 1px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 1px; margin-right: 1px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 2px; margin-right: 2px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 3px; margin-right: 3px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 4px; margin-right: 4px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 6px; margin-right: 6px; height: 1px; font-size: 1px; overflow: hidden;"></div><div style="background-color: rgb(255, 255, 255); margin-left: 10px; margin-right: 10px; height: 1px; font-size: 1px; overflow: hidden;"></div></div>
+                             
+                    
+	</div></div>
+</div>
+   
+        </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.AccordionBehavior, {"ClientStateFieldID":"ctl00_MyAccordion_AccordionExtender_ClientState","ContentCssClass":"accordionContent","FadeTransitions":true,"FramesPerSecond":40,"HeaderCssClass":"accordionHeader","HeaderSelectedCssClass":"accordionHeaderSelected","SelectedIndex":1,"id":"ctl00_MyAccordion_AccordionExtender","requireOpenedPane":false,"suppressHeaderPostbacks":true}, null, null, $get("ctl00_MyAccordion"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.RoundedCornersBehavior, {"Radius":10,"id":"ctl00_ctl06_RoundedCornersExtender2"}, null, null, $get("ctl00_ctl06_PanelReticula"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.RoundedCornersBehavior, {"Radius":10,"id":"ctl00_ctl08_RoundedCornersExtender1"}, null, null, $get("ctl00_ctl08_Panel1"));
+});
+//]]>
+</script>
+</form>
+
+
+
+</body></html>
